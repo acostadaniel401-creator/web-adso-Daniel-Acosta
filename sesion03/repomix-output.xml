@@ -1,0 +1,865 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+practica/
+  img/
+    portada.jpg
+  index.html
+  main.js
+  style.css
+Reto/
+  img/
+    fondo.jpg
+    foto1.png
+  Curriculum2.html
+  estilo.css
+  index.html
+  index2.html
+  Login.css
+  main.js
+  style.css
+package.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="practica/index.html">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con Estilos - CSS </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Isometra&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Panaderia de la Abuela</h1>
+    <img id="portada" src="img/portada.jpg"
+    alt="Previsualizacion"
+    
+    <p>Mi nombre es: <span class=" destacado"> Daniel Acosta</span></p>
+    <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet cum ratione id perferendis. Distinctio quod doloribus est a, facilis assumenda voluptates accusantium explicabo eligendi iste iure repellendus quam sed.</p>  -->
+    <p>Yo estudio <span id="estudio">ADSO</span>En el <span> SENA</span></p>
+    <hr>
+    
+    <nav> 
+        <a href="#" target="_blank">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contáctanos</a>
+    </nav>
+    <a href="#">Redes sociales</a>
+
+    <h2>Este es el Titulo 2</h2>
+    <h3>Este es el Titulo 3</h3>
+    <h4>Este es el Titulo 4</h4>
+
+    
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nihil et illum sapiente odit inventore laboriosam quas maxime vitae, harum itaque laudantium quisquam recusandae aperiam ipsum, doloremque repudiandae reiciendis iusto!</p>
+    <div>HOLA</div>
+    <div>CSS</div>
+</body>
+</html>
+</file>
+
+<file path="practica/main.js">
+
+</file>
+
+<file path="practica/style.css">
+/*
+h1 {
+    color: rgb(29, 26, 13);
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: ;
+}
+*/
+
+h1 {
+    color: #dbe6ee;
+    font-size: 40px;
+    font-family: Cinzel;
+    text-align: center;
+    font-size: 5ch;
+    border-width: 0.01px;
+    border-style: solid;
+    border-color: #000000;
+    background-color: rgb(59, 33, 8);
+
+
+}
+/*Cuando se ua clase usa el . */
+.destacado{
+    color: rgb(124, 153, 155);
+    font-family: Isometra;
+    font-style: italic;
+    font-size: 30px;
+    background-color: rgb(13, 34, 15) ;
+    letter-spacing: 20px;
+    font-weight: 20px;
+}
+/* Cuando sea un id usa # */
+#estudio{
+    background-color: aquamarine;
+    color: #29b30e;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:
+}
+
+
+nav a{
+    text-decoration: none;
+    color: rgb(29, 20, 153);
+
+    
+
+
+}
+
+h2 {
+    color: tomato;
+    text-align: right;
+    text-align: center;
+    
+}
+h3 {
+    color: rgb(35, 8, 187);
+    text-align: center;}
+h4 {
+    color: rgb(50, 150, 153);
+    text-transform: uppercase;
+    text-decoration:solid;
+    text-align: center;
+}
+p {
+    line-height:2.0;
+}
+/*
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: : 0;
+
+}
+*/
+
+hr {
+    background-color:darkorange;
+    border: none;
+    height: 5px;
+    width: 50%;
+    border-style: double;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 40px;
+    margin:auto;
+    margin: 50px
+
+}
+
+
+img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+</file>
+
+<file path="Reto/Curriculum2.html">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome  -->
+
+</head>
+<body>
+    <div class="container"></div>
+        <div class="cabecera">
+            <div class="contenedor_foto_perfil">
+                <img src="img/foto1.png">
+            </div>
+            <div class="nombre_puesto">
+                <h1>Daniel Josué Acosta Galindo</h1>
+                <h2>Administrador de Empresas</h2>
+            </div>
+        </div>
+
+            <div class="contenido_cv"></div>
+                <section class="habilidades">
+                    <h3>Perfil Profesional</h3>
+                    <hr>
+                    <br>
+                    <p class="Carta de presentacion">
+                        Estudiante de Administración de Empresas con experiencia práctica en gestión comercial, 
+                        operaciones de producción y prestación de servicios por obra o labor.
+                        Desarrollo un perfil orientado a la organización,
+                        el análisis de informacion y uso de herramientas digitales para la integracion en procesos de gestion y para la mejora de procesos,
+                        me destoco por habilidades de planeacion y atencion al detalle. 
+                        Soy una persona que disfuta hacer las cosas con calidad, Me interesa aportar en entornos dinamicos, de innovacion y de enriquecimiento colaborativo.
+                    </p>
+                    <br>
+                    <h3> <i class="fas fa-cogs"></i>Habilidades</h3>
+                    <hr>
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+
+                        
+                    </div>
+                    <div class="habilidad">Trabajo en Equipo</div>
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+
+                    <div class="habilidad">Gestion de Proyectos</div>
+
+                    <div class="grafico">
+                        <div class="donut-hole"></div>
+                        <div class="sector" id="sector1"></div>
+                        <div class="sector" id="sector2"></div>
+                        <div class="sector" id="sector3"></div>
+                    </div>
+                    
+                    <div class="habilidad">Liderazgo</div>
+                </br>
+
+                
+                    
+                    </p>
+
+
+                </section>
+
+    
+</body>
+</html>
+</file>
+
+<file path="Reto/estilo.css">
+/* =====================================================
+   HOJA DE VIDA - Daniel Josué Acosta Galindo
+   Archivo: estilo.css  (vinculado desde index2.html)
+   Rutas relativas a la carpeta Reto/:
+     img/foto1.png   img/fondo.jpg
+   ===================================================== */
+
+/* ========== VARIABLES ========== */
+:root {
+  --morado: #369e55;          /* columna izquierda y borde de foto */
+  --azul-oscuro: #1d2040;     /* columna derecha */
+  --blanco: #ffffff;
+  --linea: rgba(255, 255, 255, 0.45);
+  --anillo-1: #2fc5d8;        /* degradado de los anillos */
+  --anillo-2: #e63fa0;
+  --fuente: "Ubuntu", "Segoe UI", Arial, sans-serif;
+}
+
+/* ========== BASE ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--fuente);
+  background: #f2f2f5;
+  color: var(--blanco);
+  line-height: 1.45;
+}
+
+ul { list-style: none; }
+a { color: inherit; }
+a:focus-visible { outline: 2px solid var(--blanco); outline-offset: 2px; }
+
+/* ========== HOJA ========== */
+.cv {
+  max-width: 900px;
+  margin: 24px auto;
+  background: var(--azul-oscuro);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== CABECERA ========== */
+.cabecera {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  min-height: 240px;
+  padding: 24px 48px;
+  background:
+    linear-gradient(rgba(29, 32, 64, 0.72), rgba(29, 32, 64, 0.72)),
+    url("img/fondo.jpg") center / cover no-repeat,
+    var(--azul-oscuro);
+}
+
+.foto {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--morado);
+  background: #ddd;
+}
+
+.cabecera__texto h1 {
+  font-size: 2.8rem;
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.cabecera__texto p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* ========== CUERPO (2 COLUMNAS) ========== */
+.cuerpo {
+  display: grid;
+  grid-template-columns: 37% 63%;
+}
+
+.lateral {
+  background: var(--morado);
+  padding: 28px 24px 36px 32px;
+}
+
+.principal {
+  padding: 28px 36px 36px 28px;
+}
+
+.cuerpo section + section { margin-top: 24px; }
+
+/* ========== TÍTULOS DE SECCIÓN ========== */
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--linea);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* Columna derecha: título alineado a la derecha, icono al final */
+.titulo--der {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.icono {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--blanco);
+  color: var(--morado);
+  font-size: 0.85rem;
+}
+
+.titulo--der .icono {
+  background: var(--morado);
+  color: var(--blanco);
+}
+
+/* ========== TEXTO ========== */
+.texto {
+  font-size: 0.82rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.lateral .texto { font-size: 0.8rem; }
+
+.principal ul.texto {
+  list-style: disc;
+  padding-left: 18px;
+}
+.principal ul.texto li + li { margin-top: 3px; }
+
+/* ========== LISTA CON ANILLOS (habilidades / idiomas) ========== */
+.lista-anillo li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 0.85rem;
+}
+
+.lista-anillo li::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: conic-gradient(var(--anillo-1) 0 55%, var(--anillo-2) 55% 100%);
+  -webkit-mask: radial-gradient(circle, transparent 52%, #000 54%);
+          mask: radial-gradient(circle, transparent 52%, #000 54%);
+}
+
+/* ========== CONTACTO ========== */
+.contacto li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.contacto i {
+  flex: 0 0 auto;
+  width: 14px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.contacto a { text-decoration: none; }
+.contacto a:hover { text-decoration: underline; }
+
+/* ========== ENTRADAS (experiencia / formación / proyectos) ========== */
+.item + .item { margin-top: 16px; }
+
+.item h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.empresa {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 5px;
+  font-size: 0.82rem;
+}
+
+.empresa span:last-child {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 720px) {
+  .cv { margin: 0; }
+  .cabecera {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 20px;
+  }
+  .cabecera__texto h1 { font-size: 2rem; }
+  .cuerpo { grid-template-columns: 1fr; }
+  .lateral, .principal { padding: 24px 20px; }
+}
+
+/* ========== IMPRESIÓN / PDF (A4) ========== */
+@page { size: A4; margin: 0; }
+
+@media print {
+  body { background: none; }
+  .cv { width: calc(210mm / 0.94); zoom: 0.94; max-width: none; margin: 0; box-shadow: none; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  /* Compactación para que el CV quede en una sola hoja A4 */
+  .cabecera { min-height: 0; padding: 16px 36px; gap: 26px; }
+  .foto { width: 140px; height: 140px; border-width: 5px; }
+  .cabecera__texto h1 { font-size: 2.2rem; }
+  .cabecera__texto p { font-size: 1rem; }
+  .lateral { padding: 18px 18px 22px 26px; }
+  .principal { padding: 18px 28px 22px 22px; }
+  .cuerpo section + section { margin-top: 14px; }
+  .titulo { font-size: 1.05rem; margin-bottom: 8px; padding-bottom: 4px; }
+  .icono { width: 24px; height: 24px; font-size: 0.75rem; }
+  .texto, .lateral .texto, .empresa { font-size: 0.74rem; line-height: 1.35; }
+  .item h3 { font-size: 0.8rem; }
+  .item + .item { margin-top: 9px; }
+  .principal ul.texto li + li { margin-top: 1px; }
+  .lista-anillo li { padding: 2px 0; font-size: 0.76rem; }
+  .lista-anillo li::before { width: 18px; height: 18px; }
+  .contacto li { font-size: 0.72rem; padding: 2px 0; }
+
+  .item, .cuerpo section { break-inside: avoid; }
+}
+</file>
+
+<file path="Reto/index.html">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HV green.ver </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container"></div>
+        <div class="cabecera">
+            <div class="contenedor_foto:perfil"><img src="img/foto1.png"></div>
+            <div class="nombre_puesto">
+                <h1>Daniel Josué Acosta Galindo</h1>
+                <h2>Administrador de Empresas</h2>
+            </div>
+        </div>
+        <div class="contenido_cv"></div>
+
+            <section class="habilidades">
+                <h3>Perfil profesional</h3>
+                <hr>
+                <br>
+                <p class="Carta Presentación"></p>
+
+    <nav>
+    <div id="contenedor">
+    <h1>Daniel Josué Acosta Galindo</h1>
+    
+    </div>
+        <div class="page_header"
+        <h2>Perfil</h2>
+            <p>Estudiante de Administración de Empresas con experiencia práctica en gestión comercial, operaciones de producción y prestación de servicios técnicos independientes. Desarrollo un perfil orientado a la organización, el análisis y la mejora de procesos, integrando experiencia de campo con formación en herramientas digitales, gestión administrativa y análisis de información. Me interesa aportar en entornos donde la disciplina operativa, la lectura de datos y la visión empresarial se conviertan en decisiones y resultados.</p>
+
+        <h2>Principales Motivaciones </h2>
+            <p>Soy un hombre cristiano dedicado a su aprendizaje, motivado por el buen ambiente laboral, las relaciones interpersonales de valor, los principios de integridad y autenticidad. Deseoso por dar mi mejor esfuerzo en cada cosa que hago, teniendo satisfacción por mis labores y mi desempeñándome en funciones y cargos propios de mi área formativa para el fortalecimiento de mi experiencia </p>
+        <h2>Experiencia Laboral</h2>
+            <p>
+                <h3>Asistente de ventas</h3>
+                <p>
+                    <ul>
+                        <li>Asesoré clientes en la selección de libros y revistas mediante escucha activa y comunicación persuasiva, orientando la atención hacia una experiencia satisfactoria.</li>
+                        <li>Desarrollé habilidades de prospección, negociación y cierre, adaptando el discurso a distintos perfiles de cliente.</li>                </ol>
+                        <li>Apoyé proyectos educativos con actividades de planificación, seguimiento de indicadores y gestión de cobros.</li>                
+                    </ul>
+                </p>
+                <h3>Operario de Producción</h3>
+                <p>
+                    <ul>
+                        <li>Ejecuté actividades de alistamiento, empaque y embalaje bajo estándares de calidad, contribuyendo a la confiabilidad del proceso de distribución</li>
+                        <li>Desarrollé procesos de manufactura con cumplimiento de tiempos e indicadores de rendimiento.</li>
+                        <li>Propuse ideas para optimizar flujos de trabajo dentro del equipo de operaciones, evidenciando iniciativa y enfoque de mejora continua</li>
+                    </ul>
+
+                </p>
+
+        <h2>Formacion profesional</h2>
+            <p></p>
+
+    </nav>
+    
+
+    <footer>
+
+    </footer>
+</body>
+</html>
+</file>
+
+<file path="Reto/index2.html">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hoja de vida de Daniel Josué Acosta Galindo, estudiante de Administración de Empresas.">
+  <title>Daniel Josué Acosta Galindo | Hoja de vida</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main class="cv">
+
+    <!-- ENCABEZADO -->
+    <header class="cabecera">
+      <img class="foto" src="img/foto1.png" alt="Foto de Daniel Josué Acosta Galindo">
+      <div class="cabecera__texto">
+        <h1>Daniel Josué Acosta Galindo</h1>
+        <p>Estudiante de Administración de Empresas</p>
+      </div>
+    </header>
+
+    <div class="cuerpo">
+
+      <!-- COLUMNA IZQUIERDA -->
+      <aside class="lateral">
+
+        <section aria-labelledby="t-perfil">
+          <h2 class="titulo" id="t-perfil"><span class="icono" aria-hidden="true"><i class="fa-solid fa-user"></i></span>Perfil Profesional</h2>
+          <p class="texto">
+            Estudiante de Administración de Empresas con experiencia práctica en gestión comercial,
+            operaciones de producción y servicios por obra o labor. Mi perfil se orienta a la
+            organización, el análisis de información y el uso de herramientas digitales para mejorar
+            procesos de gestión. Me destaco por la planeación y la atención al detalle, y disfruto
+            hacer las cosas con calidad. Me interesa aportar en entornos dinámicos, innovadores y de
+            trabajo colaborativo.
+          </p>
+        </section>
+
+        <section aria-labelledby="t-motivaciones">
+          <h2 class="titulo" id="t-motivaciones"><span class="icono" aria-hidden="true"><i class="fa-solid fa-heart"></i></span>Motivaciones</h2>
+          <p class="texto">
+            Soy una persona cristiana, dedicada a su aprendizaje y motivada por el buen ambiente
+            laboral, las relaciones interpersonales de valor y los principios de integridad y
+            autenticidad. Quiero dar lo mejor en cada tarea y fortalecer mi experiencia en cargos
+            propios de mi área de formación.
+          </p>
+        </section>
+
+        <section aria-labelledby="t-habilidades">
+          <h2 class="titulo" id="t-habilidades"><span class="icono" aria-hidden="true"><i class="fa-solid fa-gear"></i></span>Habilidades</h2>
+          <ul class="lista-anillo">
+            <li>Excel y análisis de datos</li>
+            <li>Bases de datos (PostgreSQL)</li>
+            <li>Python y automatización</li>
+            <li>Gestión de proyectos</li>
+            <li>Gestión comercial</li>
+            <li>Trabajo en equipo</li>
+            <li>Pensamiento analítico</li>
+            <li>Atención al detalle</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="t-idiomas">
+          <h2 class="titulo" id="t-idiomas"><span class="icono" aria-hidden="true"><i class="fa-solid fa-language"></i></span>Idiomas</h2>
+          <ul class="lista-anillo">
+            <li>Español (nativo)</li>
+            <li>Inglés (A1, A2 y B1)</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="t-contacto">
+          <h2 class="titulo" id="t-contacto"><span class="icono" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>Contacto</h2>
+          <ul class="contacto">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Medellín, Antioquia</span></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+573103211820">310 321 1820</a></li>
+            <li><i class="fa-solid fa-at" aria-hidden="true"></i><a href="mailto:acostadaniel401@gmail.com">acostadaniel401@gmail.com</a></li>
+            <li><i class="fa-brands fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/daniel-acosta-galindo-a4b05a135" target="_blank" rel="noopener">linkedin.com/in/daniel-acosta-galindo</a></li>
+          </ul>
+        </section>
+
+      </aside>
+
+      <!-- COLUMNA DERECHA -->
+      <div class="principal">
+
+        <section aria-labelledby="t-experiencia">
+          <h2 class="titulo titulo--der" id="t-experiencia"><span class="icono" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>Experiencia Laboral</h2>
+
+          <article class="item">
+            <h3>Asistente de Ventas</h3>
+            <p class="empresa"><span>IADPA</span><span>Nov 2024 - Feb 2025</span></p>
+            <ul class="texto">
+              <li>Asesoré clientes en la selección de libros y revistas mediante escucha activa y comunicación persuasiva.</li>
+              <li>Desarrollé habilidades de prospección, negociación y cierre con distintos perfiles de cliente.</li>
+              <li>Apoyé proyectos educativos con planificación, seguimiento de indicadores y gestión de cobros.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <h3>Operario de Producción</h3>
+            <p class="empresa"><span>Industrias Vitarrico</span><span>Oct 2023 - Feb 2024</span></p>
+            <ul class="texto">
+              <li>Ejecuté alistamiento, empaque y embalaje bajo estándares de calidad.</li>
+              <li>Cumplí tiempos e indicadores de rendimiento en procesos de manufactura.</li>
+              <li>Propuse ideas para optimizar los flujos de trabajo del equipo de operaciones.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <h3>Contratista Independiente por Obra o Labor</h3>
+            <p class="empresa"><span>Actividad independiente</span><span>Jul 2017 - 2023</span></p>
+            <ul class="texto">
+              <li>Desarrollé proyectos de mantenimiento, ensamblaje e instalación durante más de cinco años.</li>
+              <li>Negocié con clientes y administré presupuestos de materiales y cronogramas de entrega.</li>
+              <li>Construí una red estable de clientes basada en confianza y calidad de servicio.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section aria-labelledby="t-formacion">
+          <h2 class="titulo titulo--der" id="t-formacion"><span class="icono" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>Formación</h2>
+
+          <article class="item">
+            <h3>Administración de Empresas</h3>
+            <p class="empresa"><span>Corporación Universitaria Adventista (UNAC)</span><span>2023 - Actualidad</span></p>
+          </article>
+          <article class="item">
+            <h3>Lengua Inglesa (Speak Out A1, A2 y B1)</h3>
+            <p class="empresa"><span>Corporación Universitaria Adventista (UNAC)</span><span>2023 - Actualidad</span></p>
+          </article>
+          <article class="item">
+            <h3>Asistencia Administrativa</h3>
+            <p class="empresa"><span>SENA</span><span>2018</span></p>
+          </article>
+          <article class="item">
+            <h3>Derecho (1 semestre cursado)</h3>
+            <p class="empresa"><span>Universidad El Bosque</span><span>2017</span></p>
+          </article>
+          <article class="item">
+            <h3>Bachiller Académico</h3>
+            <p class="empresa"><span>Instituto Académico Nueva Visión</span><span>2016</span></p>
+          </article>
+        </section>
+
+        <section aria-labelledby="t-proyectos">
+          <h2 class="titulo titulo--der" id="t-proyectos"><span class="icono" aria-hidden="true"><i class="fa-solid fa-diagram-project"></i></span>Proyectos</h2>
+
+          <article class="item">
+            <h3>Análisis financiero y toma de decisiones</h3>
+            <p class="texto">Liquidez, rentabilidad, flujo de caja y decisiones de inversión.</p>
+          </article>
+          <article class="item">
+            <h3>Datos, bases de datos y programación</h3>
+            <p class="texto">PostgreSQL, modelo relacional y Python para automatización y aplicaciones.</p>
+          </article>
+          <article class="item">
+            <h3>Comercio exterior y operaciones</h3>
+            <p class="texto">Documentación de exportación, clasificación arancelaria y logística.</p>
+          </article>
+          <article class="item">
+            <h3>Herramientas y agentes de IA en la gestión organizacional</h3>
+            <p class="texto">Investigación y construcción para generar valor alineado a la estrategia.</p>
+          </article>
+        </section>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+</file>
+
+<file path="Reto/Login.css">
+
+</file>
+
+<file path="Reto/main.js">
+
+</file>
+
+<file path="Reto/style.css">
+.mi-cuadro {
+  background-color: #0e0808; /* Color de fondo */
+  padding: 10px 10px;          /* Espacio interno */
+ 
+}
+
+#contenedor{
+    display:flex;
+}
+
+h1 {
+    text-align: center;
+    padding: 3,54cm;
+
+}
+
+
+img {height: 3cm;
+    width: 2cm,;
+    text-align: right;
+}
+
+h2 {
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 9;
+    background-color: rgb(6, 6, 51);
+    padding: 5px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: rgb(52, 105, 8);
+}
+
+nav p {
+    line-height: 2.0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8;
+
+}
+
+.marco {text-align: center;
+    padding: 3,54cm;
+
+
+}
+</file>
+
+<file path="package.json">
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
+</file>
+
+</files>

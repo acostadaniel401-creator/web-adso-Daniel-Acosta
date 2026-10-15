@@ -1,0 +1,261 @@
+/* =====================================================
+    HOJA DE VIDA - Daniel Josué Acosta Galindo
+    Archivo: estilo.css  (vinculado desde index2.html)
+    Rutas relativas a la carpeta Reto/:
+    img/foto1.png   img/fondo.jpg
+    ===================================================== 
+*/
+
+/* ========== VARIABLES ========== */
+:root {
+  /* Paleta base */
+    --ceniza: #cad2c5;          /* gris ceniza: textos suaves, líneas, iconos claros */
+    --verde-claro: #84a98c;     /* verde azulado apagado: acentos */
+    --verde-medio: #52796f;     /* verde azulado oscuro: columna izquierda */
+    --pizarra: #354f52;         /* gris pizarra oscuro: cabecera */
+    --carbon: #2f3e46;          /* azul carbón: columna derecha */
+    --blanco: #ffffff;
+
+  /* Roles (los usa el resto del CSS) */
+    --color-lateral: var(--verde-medio);   /* columna izquierda */
+    --color-principal: var(--carbon);      /* columna derecha */
+    --color-cabecera: var(--pizarra);      /* base de la cabecera */
+    --color-acento: var(--verde-claro);    /* borde de foto e iconos derecha */
+    --linea: rgba(202, 210, 197, 0.5);     /* ceniza translúcido */
+    --anillo-1: var(--ceniza);             /* degradado de los anillos */
+    --anillo-2: var(--verde-claro);
+    --fuente: "Ubuntu", "Segoe UI", Arial, sans-serif;
+}
+
+/* ========== BASE ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--fuente);
+    background: #e6ebe2;
+    color: var(--blanco);
+    line-height: 1.45;
+}
+
+ul { list-style: none; }
+a { color: inherit; }
+a:focus-visible { outline: 2px solid var(--blanco); outline-offset: 2px; }
+
+/* ========== HOJA ========== */
+.cv {
+    max-width: 900px;
+    margin: 24px auto;
+    background: var(--color-principal);
+    box-shadow: 0 6px 30px rgba(47, 62, 70, 0.28);
+}
+
+/* ========== CABECERA ========== */
+.cabecera {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    min-height: 240px;
+    padding: 24px 48px;
+    background:
+    linear-gradient(rgba(53, 79, 82, 0.78), rgba(47, 62, 70, 0.88)),
+    url("img/fondo.jpg") center / cover no-repeat,
+    var(--color-cabecera);
+}
+
+.foto {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px var(color: white);
+    background: var(--ceniza);
+}
+
+.cabecera__texto h1 {
+    font-size: 2.8rem;
+    line-height: 1.08;
+    font-weight: 700;
+}
+
+.cabecera__texto p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* ========== CUERPO (2 COLUMNAS) ========== */
+.cuerpo {
+    display: grid;
+    grid-template-columns: 37% 63%;
+}
+
+.lateral {
+    background: var(--color-lateral);
+    padding: 28px 24px 36px 32px;
+}
+
+.principal {
+    padding: 28px 36px 36px 28px;
+}
+
+.cuerpo section + section { margin-top: 24px; }
+
+/* ========== TÍTULOS DE SECCIÓN ========== */
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--linea);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+/* Columna derecha: título alineado a la derecha, icono al final */
+.titulo--der {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.icono {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--ceniza);
+    color: var(--carbon);
+    font-size: 0.85rem;
+}
+
+.titulo--der .icono {
+    background: var(--color-acento);
+    color: var(--carbon);
+}
+
+/* ========== TEXTO ========== */
+.texto {
+    font-size: 0.82rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.lateral .texto { font-size: 0.8rem; }
+
+.principal ul.texto {
+    list-style: disc;
+    padding-left: 18px;
+}
+.principal ul.texto li + li { margin-top: 3px; }
+
+/* ========== LISTA CON ANILLOS (habilidades / idiomas) ========== */
+.lista-anillo li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 0.85rem;
+}
+
+.lista-anillo li::before {
+    content: "";
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: conic-gradient(var(--anillo-1) 0 55%, var(--anillo-2) 55% 100%);
+    -webkit-mask: radial-gradient(circle, transparent 52%, #000 54%);
+            mask: radial-gradient(circle, transparent 52%, #000 54%);
+}
+
+/* ========== CONTACTO ========== */
+.contacto li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+}
+
+.contacto i {
+    flex: 0 0 auto;
+    width: 14px;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.contacto a { text-decoration: none; }
+.contacto a:hover { text-decoration: underline; }
+
+/* Columna derecha: texto en ceniza, títulos y cargos en blanco */
+.principal .texto,
+.principal .empresa { color: var(--ceniza); }
+
+/* ========== ENTRADAS (experiencia / formación / proyectos) ========== */
+.item + .item { margin-top: 16px; }
+
+.item h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.empresa {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 5px;
+    font-size: 0.82rem;
+}
+
+.empresa span:last-child {
+    flex: 0 0 auto;
+    text-align: right;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 720px) {
+    .cv { margin: 0; }
+    .cabecera {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 20px;
+    }
+    .cabecera__texto h1 { font-size: 2rem; }
+    .cuerpo { grid-template-columns: 1fr; }
+    .lateral, .principal { padding: 24px 20px; }
+}
+
+/* ========== IMPRESIÓN / PDF (A4) ========== */
+@page { size: A4; margin: 0; }
+
+@media print {
+    body { background: none; }
+    .cv { width: calc(210mm / 0.94); zoom: 0.94; max-width: none; margin: 0; box-shadow: none; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  /* Compactación para que el CV quede en una sola hoja A4 */
+    .cabecera { min-height: 0; padding: 16px 36px; gap: 26px; }
+    .foto { width: 140px; height: 140px; border-width: 5px; }
+    .cabecera__texto h1 { font-size: 2.2rem; }
+    .cabecera__texto p { font-size: 1rem; }
+    .lateral { padding: 18px 18px 22px 26px; }
+    .principal { padding: 18px 28px 22px 22px; }
+    .cuerpo section + section { margin-top: 14px; }
+    .titulo { font-size: 1.05rem; margin-bottom: 8px; padding-bottom: 4px; }
+    .icono { width: 24px; height: 24px; font-size: 0.75rem; }
+    .texto, .lateral .texto, .empresa { font-size: 0.74rem; line-height: 1.35; }
+    .item h3 { font-size: 0.8rem; }
+    .item + .item { margin-top: 9px; }
+    .principal ul.texto li + li { margin-top: 1px; }
+    .lista-anillo li { padding: 2px 0; font-size: 0.76rem; }
+    .lista-anillo li::before { width: 18px; height: 18px; }
+    .contacto li { font-size: 0.72rem; padding: 2px 0; }
+
+    .item, .cuerpo section { break-inside: avoid; }
+}

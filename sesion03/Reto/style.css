@@ -1,0 +1,50 @@
+
+
+.mi-cuadro {
+  background-color: #0e0808; /* Color de fondo */
+  padding: 10px 10px;          /* Espacio interno */
+ 
+}
+
+#contenedor{
+    display:flex;
+}
+
+h1 {
+    text-align: center;
+    padding: 3,54cm;
+
+}
+
+
+img {height: 3cm;
+    width: 2cm,;
+    text-align: right;
+}
+
+h2 {
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 9;
+    background-color: rgb(6, 6, 51);
+    padding: 5px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: rgb(52, 105, 8);
+}
+
+nav p {
+    line-height: 2.0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8;
+
+}
+
+.marco {text-align: center;
+    padding: 3,54cm;
+
+
+}
